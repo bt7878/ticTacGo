@@ -241,8 +241,8 @@ func main() {
 	router := gin.Default()
 	router.SetTrustedProxies(nil)
 
-	router.GET("/move/x", moveX)
-	router.GET("/move/o", moveO)
+	router.POST("/move/x", moveX)
+	router.POST("/move/o", moveO)
 
 	router.Run()
 }
